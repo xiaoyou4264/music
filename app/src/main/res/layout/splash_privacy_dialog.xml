@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="283dp"
+        android:layout_height="188dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingHorizontal="20dp"
+        android:background="@drawable/shape_dialog"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+    
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="声明与条款"
+            android:textSize="21sp"
+            android:textColor="#000"
+            android:paddingVertical="16dp"
+            />
+
+        <TextView
+            android:id="@+id/dialog_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="欢迎使用音乐社区，我们将严格遵守相关法律和隐私政策保护您的个人隐私，请您阅读并同意《用户协议》与《隐私政策》。"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:paddingBottom="9dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_disagree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不同意"
+            android:textSize="14sp"
+            android:textColor="#000"
+            android:alpha="0.2"
+            android:paddingBottom="11dp"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_agree"
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:text="同意并使用"
+        android:textSize="17sp"
+        android:textColor="#fff"
+        android:background="@drawable/shape_btn"
+        app:layout_constraintTop_toBottomOf="@id/linear"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
